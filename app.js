@@ -41,7 +41,7 @@ function sortearAmigo() {
     alert('Não há nomes cadastrados para o sorteio. Por favor, adicione nomes antes de sortear!');
     return;
   }
-
+// rever linhas. Não exibir alert.
   if (sorteados.length === amigoSecreto.length) {
     alert('Todos os amigos já foram sorteados! Redirecionando para nova página...');
     window.location.href = 'cadastro.html';
@@ -55,5 +55,5 @@ function sortearAmigo() {
   } while (sorteados.includes(nomeSorteado));
 
   sorteados.push(nomeSorteado);
-  resultado.innerHTML = `<li>🎉 Amigo sorteado: <strong>${nomeSorteado}</strong></li>`;
+  resultado.innerHTML = `<li> Amigo sorteado: <strong>${nomeSorteado}</strong></li>`;
 }
