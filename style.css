@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Lobster&family=Playwrite+ES:wght@100..400&display=swap');
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
+    --color-primary: #f4f8d3;
+    --color-secondary: #ffdcdc;
+    --color-tertiary: #56dfcf;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
-    --color-text: #444444;
-    --color-white: #FFFFFF;
+    --color-text: #ff9898;
+    --color-white: #ff9898;
+
+    --fonte-titulo: "Lobster", sans-serif;
+    --fonte-subtitulo: "Hachi Maru Pop", cursive;
+    --fonte-botoes: "Playwrite ES", cursive;
 }
 
 /* Estilos gerais */
@@ -34,6 +39,7 @@ body {
 .header-banner {
     flex: 40%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 40px 0 0;
@@ -54,18 +60,26 @@ body {
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
-    font-family: "Merriweather", serif;
+    font-size: 80px;
+    font-family: var(--fonte-titulo);
     font-weight: 900;
     font-style: italic;
     color: var(--color-white);
 }
+.main-image {
+    width: 20%;
+    align-items: center;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 .section-title {
-    font-family: "Inter", serif;
+    font-family: var(--fonte-subtitulo);
     font-size: 36px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-text);
     margin: 10px 0;
     text-align: center;
 }

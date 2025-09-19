@@ -43,7 +43,7 @@ function sortearAmigo() {
   }
 // rever linhas. Não exibir alert.
   if (sorteados.length === amigoSecreto.length) {
-    alert('Todos os amigos já foram sorteados! Redirecionando para nova página...');
+    alert('Todos os amigos já foram sorteados! Redirecionando para nova página.');
     window.location.href = 'cadastro.html';
     return;
   }
